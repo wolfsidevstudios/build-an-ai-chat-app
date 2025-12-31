@@ -1,0 +1,32 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+#chatContainer::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chatContainer::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#chatContainer::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 10px;
+}
+
+#chatContainer::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+.prose pre {
+    background: #1e293b;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+}
+
+.prose code {
+    color: #93c5fd;
+}

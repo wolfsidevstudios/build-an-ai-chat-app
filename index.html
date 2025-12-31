@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-900 text-slate-100 h-screen flex flex-col">
+    <header class="p-4 border-b border-slate-700 flex justify-between items-center bg-slate-800">
+        <h1 class="text-xl font-bold flex items-center gap-2">
+            <span class="text-blue-400">✦</span> Gemini 3 Flash
+        </h1>
+        <button id="clearChat" class="text-xs bg-slate-700 hover:bg-red-600 px-3 py-1 rounded transition-colors">Clear History</button>
+    </header>
+
+    <main id="chatContainer" class="flex-1 overflow-y-auto p-4 space-y-4 scroll-smooth">
+        <!-- Messages will appear here -->
+    </main>
+
+    <footer class="p-4 bg-slate-800 border-t border-slate-700">
+        <form id="chatForm" class="max-w-4xl mx-auto flex gap-2">
+            <input 
+                type="text" 
+                id="userInput" 
+                placeholder="Type your message..." 
+                class="flex-1 bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+            >
+            <button 
+                type="submit" 
+                id="sendBtn"
+                class="bg-blue-600 hover:bg-blue-500 px-6 py-2 rounded-lg font-medium transition-colors disabled:opacity-50"
+            >
+                Send
+            </button>
+        </form>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
